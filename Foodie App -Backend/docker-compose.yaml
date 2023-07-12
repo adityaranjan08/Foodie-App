@@ -1,0 +1,68 @@
+version: '3.3'
+services:
+  mysqlservice:
+    image: mysql:5.5
+    container_name: mysql_container
+    hostname: localhost
+    ports:
+      - 3306:3306
+    environment:
+      MYSQLDB_USER: root
+      MYSQLDB_ROOT_PASSWORD: Gitishita@123
+      MYSQLDB_DATABASE: userAuth
+  mongoservice:
+    image: mongo:latest
+    container_name: mongo_container
+    hostname: localhost
+    network_mode: host
+  authorizationservice:
+    container_name: authentication-service
+    build: authorization-service/
+    hostname: localhost
+    network_mode: host
+    depends_on:
+      - mongoservice
+
+  adminservice:
+    container_name: admin-service
+    build: admin-service/
+    hostname: localhost
+    network_mode: host
+    depends_on:
+      - mysqlservice
+
+  customerservice:
+    container_name: customer-service
+    build: customer-service/
+    hostname: localhost
+    network_mode: host
+    depends_on:
+      - mongoservice
+
+  favouriteservice:
+    container_name: favourite-service
+    build: favourite-service/
+    hostname: localhost
+    network_mode: host
+    depends_on:
+      - mongoservice
+
+  searchservice:
+    container_name: search-service
+    build: search-service/
+    hostname: localhost
+    network_mode: host
+    depends_on:
+      - mongoservice
+  eurekaserver:
+    container_name: eureka-server
+    build: eurekaserver/
+    hostname: localhost
+    network_mode: host
+  gateway:
+    container_name: gateway-service
+    build: gateway-service/
+    hostname: localhost
+    network_mode: host
+
+

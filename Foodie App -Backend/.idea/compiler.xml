@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eurekaserver" />
+        <module name="autthorization" />
+        <module name="customer-service" />
+        <module name="favouriteServices" />
+        <module name="gateway-service" />
+        <module name="search-service" />
+        <module name="SearchService" />
+        <module name="admin" />
+        <module name="authorization-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="restaurant-owner-service" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Food-Application-Backend" options="-parameters" />
+      <module name="SearchService" options="-parameters" />
+      <module name="admin" options="-parameters" />
+      <module name="authorization-service" options="-parameters" />
+      <module name="autthorization" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
+      <module name="favouriteServices" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="restaurant-owner-service" options="-parameters" />
+      <module name="search-service" options="-parameters" />
+    </option>
+  </component>
+</project>
