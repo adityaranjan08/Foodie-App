@@ -1,0 +1,456 @@
+
+[
+        {
+            "restaurantName":"Barbeque Nation",
+            "address": {
+                "city":"Patna",
+                "street":"Kankarbagh",
+                "zipCode":800020
+            },
+            "type":"dine-in",
+            "image":"./assets/Restaurant-Images/barbeque-bbq-nation.jpg",
+            "cuisines":[
+                {
+                    "cuisineName": "Butter Chicken",
+                    "category": "Non-Veg",
+                    "price": 350,
+                    "rating": 8,
+                    "image": "./assets/cuisines/Butter Chicken.jpg"
+                },
+                {
+                    "cuisineName": "Dal Makhni",
+                    "category": "Veg",
+                    "price": 250,
+                    "rating": 8,
+                    "image": "./assets/cuisines/daal-makhni.jpeg"
+
+                }
+            ]
+        },
+         {
+            "restaurantName":"Birayani Mahal",
+            "address": {
+                "city":"Patna",
+                "street":"Kankarbagh",
+                "zipCode":800020
+            },
+            "type":"dine-in",
+            "image":"./assets/Restaurant-Images/biryani-mahal.jpg",
+            "cuisines":[
+                {
+                    "cuisineName": "Chicken Biryani",
+                    "category": "Non-Veg",
+                    "price": 300,
+                    "rating": 7,
+                    "image":"./assets/cuisines/chickenbiryani.jpg"
+                },
+                  {
+                    "cuisineName": "Veg Biryani",
+                    "category": "Veg",
+                    "price": 270,
+                    "rating": 8,
+                    "image": "./assets/cuisines/vegbiryani.jpg"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Harilal",
+            "address": {
+                "city":"Patna",
+                "street":"Kankarbagh",
+                "zipCode":800020
+            },
+            "type":"hotel",
+            "image":" ./assets/Restaurant-Images/harilal.jpg",
+            "cuisines":[
+                {
+                    "cuisineName": "Jalebi",
+                    "category": "Veg",
+                    "price": 119,
+                    "rating": 7,
+                    "image":"./assets/cuisines/Jalebi.jpg"
+                },
+                  {
+                    "cuisineName": "Puri Sabji",
+                    "category": "Veg",
+                    "price": 86,
+                    "rating": 8,
+                    "image":"./assets/cuisines/puri-sabji.jpg"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Bansi Vihar ",
+            "address": {
+                "city":"Patna",
+                "street":"Boring Rd.",
+                "zipCode":800020,
+                "image":"./assets/cuisines/"
+            },
+            "type":"Take-away",
+            "image":" ./assets/Restaurant-Images/bansi vihar.jpg",
+            "cuisines":[
+                {
+                    "cuisineName": "Masala Dosa",
+                    "category": "Veg",
+                    "price": 150,
+                    "rating": 7,
+                    "image":"./assets/cuisines/Masala-Dosa.jpg"
+                },
+                  {
+                    "cuisineName": "Idly",
+                    "category": "Veg",
+                    "price": 130,
+                    "rating": 8,
+                    "image":"./assets/cuisines/idli-sambhar.jpg"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Chicago Pizza",
+            "address": {
+                "city":"Patna",
+                "street":"Kankarbagh",
+                "zipCode":800020
+            },
+            "type":"Fast Food",
+            "image":"./assets/Restaurant-Images/chicago-pizza.jpg ",
+            "cuisines":[
+                {
+                    "cuisineName": "Veg Overloaded Pizza",
+                    "category": "Veg",
+                    "price": 239,
+                    "rating": 6,
+                    "image":"./assets/cuisines/Veg Overloaded Pizza.jpg"
+                },
+                  {
+                    "cuisineName": "Butter Chicken Pizza",
+                    "category": "Non-Veg",
+                    "price": 199,
+                    "rating": 8,
+                    "image":"./assets/cuisines/butter chicken pizza.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Anandam",
+            "address": {
+                "city":"Dehradun",
+                "street":"Vijay Colony",
+                "zipCode":248001
+            },
+            "type":"Dine-in",
+            "image": "./assets/Restaurant-Images/anandam.jpg",
+            "cuisines":[
+                {
+                    "cuisineName": "Deluxe Thali",
+                    "category": "Veg",
+                    "price": 70,
+                    "rating": 6,
+                    "image":"./assets/cuisines/delux thali.jfif"
+                },
+                  {
+                    "cuisineName": "Raj Kachori",
+                    "category": "Veg",
+                    "price": 150,
+                    "rating": 8,
+                    "image":"./assets/cuisines/raj kachori.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Handi Punjab Ki",
+            "address": {
+                "city":"Dehradun",
+                "street":"Vijay Colony",
+                "zipCode":248001
+            },
+            "type":"Take-away",
+            "image":"./assets/Restaurant-Images/handi-punjabi-di.jpg",
+
+            "cuisines":[
+                {
+                    "cuisineName": "Malai Chaap Tikka",
+                    "category": "Veg",
+                    "price": 170,
+                    "rating": 8,
+                    "image":"./assets/cuisines/malai chaap tikka.jfif"
+                },
+                  {
+                    "cuisineName": "Dal Makhni Punjabi Tadka",
+                    "category": "Veg",
+                    "price": 160,
+                    "rating": 7,
+                    "image":"./assets/cuisines/dal makhni punjabi tadka.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Doon Triple Nine",
+            "address": {
+                "city":"Dehradun",
+                "street":"Vijay Colony",
+                "zipCode":248001
+            },
+            "type":"Dine-in",
+            "image":"./assets/Restaurant-Images/doon-triple-nine .jpg",
+
+            "cuisines":[
+                {
+                    "cuisineName": "Butter Chicken",
+                    "category": "Non-Veg",
+                    "price": 230,
+                    "rating": 7,
+                    "image":"./assets/cuisines/Butter Chicken.jpg"
+
+                },
+                  {
+                    "cuisineName": "Chicken Special Rara",
+                    "category": "Non-Veg",
+                    "price": 265,
+                    "rating": 6,
+                    "image":"./assets/cuisines/Chicken Special Rara.jpg"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Nath's Chineese",
+            "address": {
+                "city":"Dehradun",
+                "street":"Vijay Colony",
+                "zipCode":248001
+            },
+            "type":"Ghost Kitchen",
+            "image":"./assets/Restaurant-Images/nath-chinese.jpg",
+
+            "cuisines":[
+                {
+                    "cuisineName": "Chicken Momos",
+                    "category": "Non-Veg",
+                    "price": 145,
+                    "rating": 7,
+                    "image":"./assets/cuisines/Chicken Momos.jpg"
+                },
+                  {
+                    "cuisineName": "Cheese Momos",
+                    "category": "Veg",
+                    "price": 85,
+                    "rating": 8,
+                    "image":"./assets/cuisines/cheese momos.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Anandpuri Restaurant",
+            "address": {
+                "city":"Dehradun",
+                "street":"Vijay Colony",
+                "zipCode":248001
+            },
+            "type":"Dine-in",
+            "image":"./assets/Restaurant-Images/anandpuri-sweets-dehradun.jpg",
+
+            "cuisines":[
+                {
+                    "cuisineName": "Chhole Bhature",
+                    "category": "Non-Veg",
+                    "price": 115,
+                    "rating": 7,
+                    "image":"./assets/cuisines/chole bhature.jpg"
+                },
+                  {
+                    "cuisineName": "Rasmalai",
+                    "category": "Veg",
+                    "price": 90,
+                    "rating": 8,
+                    "image":"./assets/cuisines/rasmalai.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Apna Sweets",
+            "address": {
+                "city":"Ujjain",
+                "street":"Rishi Nagar",
+                "zipCode":456010
+            },
+            "type":"Dine-in",
+            "image":"./assets/Restaurant-Images/apna sweets.jpg",
+
+            "cuisines":[
+                {
+                    "cuisineName": "Jain Thali",
+                    "category": "Veg",
+                    "price": 238,
+                    "rating": 7,
+                    "image":"./assets/cuisines/jain thali.jfif"
+                },
+                  {
+                    "cuisineName": "Kadhai Paneer",
+                    "category": "Veg",
+                    "price": 166,
+                    "rating": 8,
+                    "image":"./assets/cuisines/kadhai paneer.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Shree Ganga",
+            "address": {
+                "city":"Ujjain",
+                "street":"Rishi Nagar",
+                "zipCode":456010
+            },
+            "type":"Dine-in",
+            "image":"./assets/Restaurant-Images/shree ganga.jpg",
+
+            "cuisines":[
+                {
+                    "cuisineName": "Sabji Puri Combo",
+                    "category": "Veg",
+                    "price": 220,
+                    "rating": 7,
+                    "image":"./assets/cuisines/sabji puri combo.jfif"
+                },
+                  {
+                    "cuisineName": "Boondi Laddu",
+                    "category": "Veg",
+                    "price": 180,
+                    "rating": 5,
+                    "image":"./assets/cuisines/boondi laddu.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Rajkumar Food ",
+            "address": {
+                "city":"Ujjain",
+                "street":"Rishi Nagar",
+                "zipCode":456010
+            },
+            "type":"Dine-in",
+            "image":"./assets/Restaurant-Images/Rajkumar Restaurant.jpg",
+
+            "cuisines":[
+                {
+                    "cuisineName": "Butter Paneer Masala",
+                    "category": "Veg",
+                    "price": 125,
+                    "rating": 7,
+                    "image":"./assets/cuisines/butter paneer masala.jfif"
+                },
+                  {
+                    "cuisineName": "Butter Khichdi",
+                    "category": "Veg",
+                    "price": 75,
+                    "rating": 3,
+                    "image":"./assets/cuisines/butter khichdi.jpg"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Jain's Dal Bafle",
+            "address": {
+                "city":"Ujjain",
+                "street":"Rishi Nagar",
+                "zipCode":456010
+            },
+            "type":"Dine-in",
+            "image":"./assets/Restaurant-Images/jainDal-bafla.jpg",
+
+            "cuisines":[
+                {
+                    "cuisineName": "Dal Bafla Thali",
+                    "category": "Veg",
+                    "price": 220,
+                    "rating": 7,
+                    "image":"./assets/cuisines/dal bafla thali.jfif"
+                },
+                  {
+                    "cuisineName": "Dal Bafle Shudh Ghee",
+                    "category": "Veg",
+                    "price": 180,
+                    "rating": 7,
+                    "image":"./assets/cuisines/dal bafla shudh ghee.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Circle Juice Bar",
+            "address": {
+                "city":"Ujjain",
+                "street":"Rishi Nagar",
+                "zipCode":456010
+            },
+            "type":"Dine-in",
+            "image":"./assets/Restaurant-Images/circle.png",
+            "cuisines":[
+                {
+                    "cuisineName": "White Sauce Pasta",
+                    "category": "Veg",
+                    "price": 260,
+                    "rating": 7,
+                    "image":"./assets/cuisines/whiteSaucePasta.jfif"
+                },
+                {
+                    "cuisineName": "Tandoori Paneer Sandwich",
+                    "category": "Veg",
+                    "price": 145,
+                    "rating": 6,
+                    "image":"./assets/cuisines/tandoori paneer sandwich.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"Shri Sawariya Sandwich",
+            "address": {
+                "city":"Ujjain",
+                "street":"Nanakheda Bus Stand",
+                "zipCode":456010
+            },
+            "type":"Dine-in",
+            "image":"./assets/Restaurant-Images/ShreeSawariya.jpg",
+            "cuisines":[
+                {
+                    "cuisineName": "White Sauce Pasta",
+                    "category": "Veg",
+                    "price": 260,
+                    "rating": 7,
+                    "image":"./assets/cuisines/whiteSaucePasta.jfif"
+                },
+                {
+                    "cuisineName": "Tandoori Paneer Sandwich",
+                    "category": "Veg",
+                    "price": 145,
+                    "rating": 6,
+                    "image":"./assets/cuisines/tandoori paneer sandwich.jfif"
+                }
+            ]
+        },
+        {
+            "restaurantName":"New Sagar Cafe",
+            "address": {
+                "city":"Ujjain",
+                "street":"Freeganj",
+                "zipCode":456010
+            },
+            "type":"Dine-in",
+            "image":"",
+            "cuisines":[
+                {
+                    "cuisineName": "White Sauce Pasta",
+                    "category": "Veg",
+                    "price": 260,
+                    "rating": 7,
+                    "image":"./assets/cuisines/whiteSaucePasta.jfif"
+                },
+                {
+                    "cuisineName": "Tandoori Paneer Sandwich",
+                    "category": "Veg",
+                    "price": 145,
+                    "rating": 6,
+                    "image":""
+                }
+            ]
+        }
+     ]

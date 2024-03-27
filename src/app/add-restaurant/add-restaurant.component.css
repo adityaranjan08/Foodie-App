@@ -1,0 +1,75 @@
+.bg-img{
+    background-image: url("src\assets\login-image.jpg");
+    max-width:100%;
+    max-height: 100%;
+   
+    }
+    
+  
+  
+    .login-container {
+       
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+      
+       
+      }
+      
+      form {
+        width: 110%;
+        height: auto;
+      }
+      
+      .login-content {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+       margin-bottom:120px;
+       
+      }
+      
+      .login-toolbar {
+        justify-content: center;
+        background-color: #EB6759 ;
+      }
+      
+     
+      
+      .mat-raised-button {
+        width: 60%;
+        height: 40px;
+        background-color: #EB6759 ;
+      }
+      .socialMediaFlex{
+       
+        display:flex;
+        justify-content: space-around;
+      }
+
+
+      #image-container
+      {
+        height: 1%;
+        width: 1%;
+      }
+
+      .example-additional-selection {
+        opacity: 0.75;
+        font-size: 0.75em;
+      }
+
+
+      .mat-radio-button ~ .mat-radio-button {
+        margin-left: 16px;
+      }
+
+      .cusbox
+      {
+         
+         height:auto;
+         width:100%;
+        
+         
+      }

@@ -1,0 +1,56 @@
+.bg-img
+{
+  background-image: url("src\assets\login-image.jpg");
+  max-width: 100%;
+  max-height:100%;
+}    
+
+  
+  
+    .login-container {
+       
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+      
+       
+      }
+      
+      form {
+        width: 100%;
+      }
+      
+      .login-content {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+       margin-bottom:120px;
+       
+      }
+      
+      .login-toolbar {
+        justify-content: center;
+        background-color: #EB6759 ;
+      }
+      
+     
+      
+      .mat-raised-button {
+        width: 60%;
+        height: 40px;
+        background-color: #EB6759 ;
+      }
+      .socialMediaFlex{
+       
+        display:flex;
+        justify-content: space-around;
+      }
+
+   
+
+      #image-container
+      {
+        height: 1%;
+        width: 1%;
+      }

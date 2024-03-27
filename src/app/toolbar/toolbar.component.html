@@ -1,0 +1,66 @@
+
+
+    <mat-toolbar>
+       <img routerLink="/toolbar" src="./assets/icon.png" height="50px" width="60px">
+      <span style="font-size:xx-large; margin-left:10px; font-family:Abril Fatface;">Foodie App</span>
+      <span class="example-spacer">
+        <!-- city search bar -->
+        <form id="searchbar"  *ngIf="!(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar/favorite' || route.url==='/toolbar/register' || route.url==='/toolbar/adminDashboard'|| route.url==='/toolbar/addRestaurant')">
+         
+          <mat-form-field appearance="legacy">
+          
+            <mat-label style="font-family:Franklin;"> <mat-icon> location_on</mat-icon>Select a city</mat-label>
+           
+            <mat-select [(ngModel)]="selectedValue" (selectionChange)="searchByCity($event.value)" name="food">
+               <mat-option *ngFor="let city of cities" [value]="city.value">
+                {{city.viewValue}}
+              </mat-option> 
+            </mat-select>
+          </mat-form-field>
+         
+         </form>
+        
+        <!-- cuisine search bar -->
+      </span>
+      <span class="example-spacer">
+      <form class="example-form"  *ngIf="!(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar/favorite' || route.url==='/toolbar/register'|| route.url==='/toolbar/adminDashboard'|| route.url==='/toolbar/addRestaurant')">
+        <mat-icon>restaurant_menu</mat-icon><mat-form-field class="example-full-width" appearance="legacy">
+        <mat-label  style="font-family:Franklin;">Search Cuisines</mat-label>
+          <input type="text"
+                 placeholder="Pick one"
+                 aria-label="Number"
+                 matInput
+                 [formControl]="myControl"
+                 [matAutocomplete]="auto">
+          <mat-autocomplete  autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option  (click)="getbyCuisine(option)" *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+    </span>
+
+
+    <!-- add rest button -->
+    <button *ngIf="!(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar/favorite' || route.url==='/toolbar/register'|| route.url==='/toolbar/userdashboard' || route.url==='/toolbar/home' || route.url==='/toolbar' || route.url==='/toolbar/addRestaurant')" routerLink="/toolbar/addRestaurant" style="font-family:Encode Sans; font-size:medium; margin-right:20px;" mat-button> <mat-icon  mat-icon-button>add</mat-icon>Add Restaurant</button>
+     <!-- <h3>{{imageBase64String}}</h3> -->
+   
+    <img [src]="imageBase64String" id="profilePic" *ngIf="!(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar' || route.url==='/toolbar/register'|| route.url==='/toolbar/adminDashboard'|| route.url==='/toolbar/addRestaurant')"> &nbsp;&nbsp;
+    <button *ngIf="!(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar' || route.url==='/toolbar/register'|| route.url==='/toolbar/adminDashboard' || route.url==='/toolbar/addRestaurant')"  mat-icon-button (click)="viewCart()"><mat-icon  [matBadge]="totalItem" matBadgeOverlap="false">shopping_cart</mat-icon></button>&nbsp;
+    <button  *ngIf="!(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar' || route.url==='/toolbar/register'|| route.url==='/toolbar/adminDashboard' || route.url==='/toolbar/addRestaurant')" matTooltip="Favourites" mat-button (click)="showFav()"><mat-icon  mat-icon-button class="icon-display">favorite</mat-icon>&nbsp;&nbsp;&nbsp;</button>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon [matMenuTriggerFor]="menu">perm_identity</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button style="font-family:Encode Sans;" routerLink="/toolbar/login" *ngIf="(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar')" mat-menu-item><mat-icon>account_circle</mat-icon>Customer Login</button>
+        <button style="font-family:Encode Sans;" routerLink="/toolbar/adminLogin" *ngIf="(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar')" mat-menu-item><mat-icon>settings</mat-icon>Admin Login</button>
+        <button style="font-family:Yanone Kaffeesatz ; font-size: x-large;" class="logout" (click)="logout()" *ngIf="!(route.url==='/toolbar/login' || route.url==='/toolbar/adminLogin' || route.url==='/toolbar'|| route.url==='/toolbar/register')" mat-button>Sign out</button>
+      </mat-menu>
+    </mat-toolbar>
+    
+  
+  <app-home *ngIf="route.url==='/toolbar'"></app-home>
+    <router-outlet></router-outlet>
+
+

@@ -1,0 +1,29 @@
+<body class="bg-img">
+
+    <form>
+        <div class="login-container">
+            <div class="login-content">
+                <mat-toolbar class="login-toolbar">Log In</mat-toolbar>
+                <mat-card>
+                    <!-- <form [formGroup]="loginForm" #formDirective="ngForm" (ngSubmit)="login(loginForm, formDirective)" > -->
+                      <form [formGroup]="loginForm" >
+ 
+                      <mat-form-field>
+                            <mat-icon matPrefix>person_outline</mat-icon>
+                            <input autofocus type="text" matInput placeholder="Enter email here" formControlName="email">
+                        </mat-form-field>
+    
+                        <mat-form-field>
+                            <mat-icon matPrefix>lock_outline</mat-icon>
+                            <input type="password" autocomplete="false" matInput placeholder="Password"  formControlName="pwd">
+                        </mat-form-field>
+    
+                        <button type="submit" [disabled]="loginForm.invalid"  mat-raised-button class="login-toolbar" (click)="login()">LOGIN</button>
+            </form>
+                          
+              <br>
+              <span style="margin-left: 80px;"> If You don't have a account <button class="login-toolbar" mat-raised-button color="primary" routerLink ='/toolbar/register'>REGISTER HERE</button></span>
+                    
+                </mat-card>
+            </div>
+        </div>

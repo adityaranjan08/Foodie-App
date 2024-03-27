@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Koulen&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300&family=Koulen&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300&family=Edu+SA+Beginner&family=Encode+Sans&family=Koulen&family=Lato:wght@100&family=Manrope:wght@200;500&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Bangers&family=Bebas+Neue&family=Creepster&family=Montserrat:ital,wght@1,500&family=Ms+Madi&family=Open+Sans:wght@500&family=Roboto+Condensed:wght@700&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Bangers&family=Bebas+Neue&family=Creepster&family=Montserrat:ital,wght@1,500&family=Ms+Madi&family=Open+Sans:wght@500&family=Roboto+Condensed:wght@700&family=Square+Peg&family=Yanone+Kaffeesatz&display=swap');
+
+
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  #searchbar
+  {
+    margin-top:5px;
+    margin-left: 280px;  
+  }
+ .mat-toolbar
+ {
+  background-color: #EB6759 ; 
+ }
+ .example-form {
+  min-width: 150px;
+  max-width: 200px;
+  width: 90%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.mat-option
+{
+  max-height:100px;
+  overflow:auto;
+}
+
+.logout
+{
+  color:  #EB6759;
+}
+#profilePic
+{
+  width: 45px;
+  height: 45px;
+  border-radius:20px;
+  margin-left:200px;
+}

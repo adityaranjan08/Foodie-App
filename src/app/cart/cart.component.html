@@ -1,0 +1,43 @@
+<ng-container *ngIf="data.cuisnedata.length!=0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-cuisine">
+                <table class="table table-responsive">
+                    <thead>
+
+                    </thead>
+                    <tbody *ngFor="let cuisine of data.cuisnedata">
+                        <tr>
+
+                            <td><img style="height: 120px; width: 100px;" [src]="cuisine.image" alt=""></td>
+                            <td>{{cuisine.cuisineName}}</td>
+
+                            <td>{{cuisine.price}}</td>
+
+                            <td>
+                                <button (click)="remove(cuisine)" class="btn btn-danger"><i
+                                        class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <button style="margin-left: 160px;" mat-raised-button color="primary" (click)="order()">ORDER</button>
+</ng-container>
+
+
+<ng-container *ngIf="data.cuisnedata.length===0">
+    <div class="container">
+        <div class="card">
+            <h1 class="card-title">Cart</h1>
+        </div>
+        <div class="center">
+            <img src="./assets/swiggy cart.png" alt="">
+            <h4>Your Cart Is empty!</h4>
+            <h6>Add item to it now</h6>
+        </div>
+    </div>
+</ng-container>

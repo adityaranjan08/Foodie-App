@@ -1,0 +1,54 @@
+.example-card {
+    width: 300px;
+     height: max-content;
+    
+     margin: 0.5%;
+     background-color:#FEF9E7;
+     border-radius:15px;
+   }
+   
+   .mat-card-image{
+     width: 96%;
+     margin-left: 1%;
+     height: 150px;
+     border-radius:5px;
+     background-color:#FEF9E7;
+     border-radius:15px;
+    
+   }
+   .bg-img{
+    
+   width:100vw;
+   height:100vw;
+    background-color: #D0D3D4 ;
+    }
+  
+    .example-header-image {
+      
+      background-size: cover;
+    }
+  
+    .icon-photo
+    {
+      width: 40px;
+      height: 40px;
+      border-radius:30px;
+    }
+    #profilePic
+    {
+      width: 45px;
+      height: 45px;
+      border-radius:20px;
+      margin-left:1300px;
+    }
+
+    .icon-display {
+      transform: scale(2);
+      color: #EB6759;
+      margin-left:15px;
+   }
+
+   .my-pagination ::ng-deep .ngx-pagination .current {
+    background: black;
+    
+  }

@@ -1,0 +1,29 @@
+<body class="bg-img">
+
+    <form>
+        <div class="login-container">
+            <div class="login-content">
+                <mat-toolbar class="login-toolbar" >Administrator Log-In</mat-toolbar>
+                <mat-card>
+
+                      <form [formGroup]="loginForm" >
+ 
+                      <mat-form-field>
+                            <mat-icon matPrefix>person_outline</mat-icon>
+                            <input autofocus type="text" matInput placeholder="Enter email here" formControlName="email">
+                        </mat-form-field>
+    
+                        <mat-form-field>
+                            <mat-icon matPrefix>lock_outline</mat-icon>
+                            <input type="password" autocomplete="false" matInput placeholder="Password"  formControlName="pwd">
+                        </mat-form-field>
+    
+                        <button type="submit" mat-raised-button (click)="adminLogin()">LOGIN</button>
+            </form>
+                          
+              <br>   
+                </mat-card>
+            </div>
+        </div>
+
+

@@ -1,0 +1,33 @@
+<body class="bg-img">
+  <mat-grid-list cols="4" >
+    <mat-grid-tile *ngFor="let restaurant  of restaurants |
+      paginate: { itemsPerPage: 8, 
+        currentPage: page ,
+        totalItems:totalLength}"> <br>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image" >
+        <img class="icon-photo"[src]="restaurant.image">
+      </div>
+      <mat-card-title style="font-family:Comfortaa ;"><strong>{{restaurant.restaurantName}}</strong></mat-card-title>
+      <mat-card-subtitle style="font-family:Comfortaa ;"><strong>{{restaurant.address.city}}</strong></mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="restaurant.image">   
+    <mat-card-content style="font-family:Lato ; color:black">
+   <strong>Service: {{restaurant.type}}</strong> 
+    </mat-card-content>
+    <mat-card-actions>
+       
+      <!-- <button  style="font-family:Manrope;" mat-button><mat-icon [matMenuTriggerFor]="menu">restaurant_menu</mat-icon>Cuisines</button> -->
+      <button  style="font-family:Manrope;" mat-button  (click)="showCuisines(restaurant)"><mat-icon>restaurant_menu</mat-icon>Cuisines</button>
+     
+    </mat-card-actions>
+  </mat-card>
+</mat-grid-tile>
+
+</mat-grid-list>
+<pagination-controls style="margin-left: 500px;" class="text-center my-pagination" (pageChange)="page = $event"></pagination-controls>  
+</body>
+
+
+  

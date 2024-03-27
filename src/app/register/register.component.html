@@ -1,0 +1,57 @@
+<body class="bg-img">
+<div class="login-container">
+	<div class="login-content">
+		<mat-toolbar class="login-toolbar">REGISTER</mat-toolbar>
+		   <mat-card> 
+		          <form [formGroup]="registerForm" #formDirective="ngForm" (submit)="onRegister()">
+				       <mat-form-field>
+					       <mat-icon matPrefix>email</mat-icon>
+					       <input autofocus type="email" matInput placeholder="Email *" formControlName="email">
+				       </mat-form-field> &nbsp;&nbsp;
+                
+                       <mat-form-field>
+                           <mat-icon matPrefix>person_outline</mat-icon>
+					       <input autofocus type="text" matInput placeholder="Username *" formControlName="username">
+				      </mat-form-field>   
+				      <mat-form-field>
+					        <mat-icon matPrefix>lock_outline</mat-icon>
+					        <input type="password" autocomplete="false" matInput placeholder="Password *" formControlName="password">
+				      </mat-form-field>&nbsp;&nbsp;
+				
+					   <mat-form-field class="example-full-width">
+						     <input placeholder="Enter Country" autofocus type="text" autocomplete="false" matInput formControlName="country"> 
+					 </mat-form-field>
+
+					 <mat-form-field  class="example-full-width">
+					         <input autofocus type="text"  placeholder="Enter State" autocomplete="false" matInput formControlName="state">
+					</mat-form-field>&nbsp;&nbsp;
+					   <mat-form-field>
+                           <input autofocus type="text"  placeholder="Enter Your City" autocomplete="false" matInput formControlName="city">
+					 </mat-form-field> &nbsp;&nbsp;
+					<mat-form-field>
+						
+					      <input autofocus type="text"  placeholder="Enter Steet Name" autocomplete="false" matInput formControlName="street">
+					</mat-form-field> &nbsp;&nbsp;
+					<mat-form-field>
+					     <input  placeholder="Enter House No" autofocus type="text" autocomplete="false" matInput formControlName="houseNo">
+					</mat-form-field>&nbsp;&nbsp;
+				<mat-form-field>
+					    <input autofocus  placeholder="Enter ZipCode" type="text" autocomplete="false" matInput formControlName="zipcode">
+				</mat-form-field> &nbsp;&nbsp;
+				<mat-form-field>
+					  <mat-icon matPrefix>call</mat-icon>
+					  <input autofocus type="text"  placeholder="Enter Your Contact Number" autocomplete="false" matInput formControlName="phoneNo">
+			 </mat-form-field><br>
+			 <img [src]="url" height="100px" width="100px" margin="150px" ><br>
+			 <label>Select a profile Picture</label><br>
+                <input type="file" id="imageInput"  (change)="onFileUpload($event)"/>	
+				
+			<div class="socialMediaFlex">
+        	<button style="width:50%" type="submit" mat-raised-button >Submit</button>
+             </div>
+			</form>
+		</mat-card>
+	</div>
+</div>
+</body>
+

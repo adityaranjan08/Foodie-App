@@ -1,0 +1,35 @@
+.example-card {
+    width: 300px;
+     height: max-content;
+     margin-left: 1%;
+     margin: 0.5%;
+     background-color:#FEF9E7;
+     border-radius:15px;
+   
+   }
+   
+   .mat-card-image{
+     width: 96%;
+     margin-left: 1%;
+     height: 150px;
+    
+   }
+   .bg-img{
+    
+    width: 100vw;
+    height: 100vw;
+    background-color: #D0D3D4 ;
+    }
+  
+    .example-header-image {
+      
+      background-size: cover;
+    }
+  
+    .icon-photo
+    {
+      width: 40px;
+      height: 40px;
+      border-radius:30px;
+    }
+    

@@ -1,0 +1,103 @@
+
+
+<body class="bg-img">
+    <div class="login-container">
+        <div class="login-content">
+
+            <mat-toolbar class="login-toolbar">Restaurant Details</mat-toolbar>
+            <mat-card>
+
+                <form [formGroup]="restaurntForm" (submit)="onSubmit(restaurntForm)">
+
+                    <img [src]="url" height="80px" width="80px"> <br>
+                    <label style="font-size: small;">Select Restaurant Image</label><br>
+                    <input style="font-size: small;" type="file" id="imageInput" (change)="onRestFileUpload($event)"
+                        formControlName="restImage"><br>
+
+
+                    Name: <mat-form-field>
+                        <input autofocus type="text" matInput placeholder="Enter Restaurant Name"
+                            formControlName="restaurantName">
+                    </mat-form-field> &nbsp;&nbsp; &nbsp;&nbsp;
+
+
+
+                   
+                    <br>
+                    <span>Address : </span>
+                    <mat-form-field>
+                        <input autofocus type="text" matInput placeholder="Enter Name of city" formControlName="city">
+                    </mat-form-field> &nbsp;&nbsp;
+
+                    <mat-form-field>
+                        <input type="text" autocomplete="false" matInput placeholder="Street Name"
+                            formControlName="street">
+                    </mat-form-field> &nbsp;&nbsp;
+
+
+                    <mat-form-field>
+                        <input placeholder="Enter zipcode" autofocus type="text" autocomplete="false" matInput
+                            formControlName="zipcode">
+                    </mat-form-field> &nbsp;
+            
+
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Select Type of Restaurant</mat-label>
+                        <mat-select [(ngModel)]="selectedValue" name="type" formControlName="type">
+                            <mat-option *ngFor="let type of types" [value]="type.value">
+                                {{type.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field> &nbsp;&nbsp;
+                    <br>
+
+
+                    <div class='cusbox' formArrayName="items">
+                        <h1>Cuisine Details</h1>
+
+                        <div *ngFor="let control of getControls().controls; let i=index" [formGroupName]="i">
+
+                            <mat-form-field appearance="legacy">
+                                <input placeholder="Enter Cuisine name" autofocus type="text" autocomplete="false"
+                                    matInput formControlName="cuisineName">
+
+                            </mat-form-field>&nbsp;&nbsp;
+
+
+                            <mat-radio-group aria-label="Select an option" formControlName="category">
+                                <mat-radio-button value="veg">Veg</mat-radio-button>
+                                <mat-radio-button value="non_veg">Non-Veg</mat-radio-button>
+                            </mat-radio-group> &nbsp;&nbsp;
+
+
+                            <mat-form-field>
+                                <input autofocus type="text" placeholder="Enter price" autocomplete="false" matInput
+                                    formControlName="price">
+                            </mat-form-field> &nbsp;&nbsp;
+
+                            <mat-form-field style="width:70px;">
+
+                                <input autofocus type="number" placeholder="Rating" autocomplete="false" matInput
+                                    formControlName="rating">
+                            </mat-form-field> &nbsp;&nbsp;
+
+
+                            <input style="font-size: small;" type="file" id="imageInput"
+                                (change)="onCuisineFileUpload($event)" formControlName="image">
+                                <button style="background-color: #EB6759  ;"  mat-button (click)="removeField(i)">Remove</button>
+
+                            <br>
+                            
+
+                        </div>
+
+                    </div>
+                    <div class="socialMediaFlex">
+                        <button style="width:50%" type="submit" mat-raised-button>Submit</button>
+                    </div>
+                </form>
+                <button style="background-color: #EB6759  ;" (click)="addItem()" mat-button>Add</button>
+            </mat-card>
+        </div>
+    </div>
+</body>

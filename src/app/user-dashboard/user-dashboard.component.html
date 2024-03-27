@@ -1,0 +1,34 @@
+
+<body class="bg-img">
+  <!-- <button mat-button (click)="showFav()"><mat-icon class="icon-display">favorite</mat-icon>&nbsp;&nbsp;&nbsp;Show Favourites</button> -->
+    <mat-grid-list cols="4" >
+      <mat-grid-tile *ngFor="let restaurant  of restaurants |
+      paginate: { itemsPerPage: 8, 
+        currentPage: page ,
+        totalItems:totalLength}">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image" >
+          <img class="icon-photo"[src]="restaurant.image">
+        </div>
+        <mat-card-title style="font-family:Comfortaa ;">{{restaurant.restaurantName}}</mat-card-title>
+        <mat-card-subtitle><strong>{{restaurant.address.city}}</strong></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="restaurant.image">
+      <mat-card-content>
+     <strong> Service: {{restaurant.type}}</strong>
+      </mat-card-content>
+      <mat-card-actions>
+        <!-- <button mat-button (click)="todo()"><mat-icon>library_add</mat-icon>Order</button> -->
+        <button mat-button><mat-icon (click)="showCuisines(restaurant)">restaurant_menu</mat-icon>Cuisines</button>
+        
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+      
+  </mat-grid-list>
+  <pagination-controls style="margin-left: 500px;" class="text-center my-pagination" (pageChange)="page = $event"></pagination-controls>
+  </body>
+  
+  
+    

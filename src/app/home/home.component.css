@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300&family=Edu+SA+Beginner&family=Koulen&family=Lato:wght@100&family=Manrope:wght@200;500&family=Roboto:wght@100&display=swap');
+
+.example-card{
+  width: 300px;
+   height: max-content;
+   margin-left: 1%;
+   margin: 0.5%;
+   background-color:#FEF9E7;
+   border-radius:15px;
+   margin-top: 5px;
+  
+ }
+ 
+ .mat-card-image{
+   width: 96%;
+   margin-left: 1%;
+   height: 150px;
+   border-radius:5px;
+ 
+ }
+ .bg-img{
+  
+  width:100vw;
+  height:100vw;
+  background-color: #D0D3D4
+  }
+
+  .example-header-image {
+    
+    background-size: cover;
+  }
+
+  .icon-photo
+  {
+    width: 40px;
+    height: 40px;
+    border-radius:30px;
+  }
+  .example-card:hover
+  {
+    transform: translate3D(0,-1px,0) scale(1.05);
+  }
+  #menu{
+
+    width: 1000px;
+    height: 1000px;
+  }
+  .my-pagination ::ng-deep .ngx-pagination .current {
+    background: black;
+    
+  }
