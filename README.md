@@ -12,6 +12,6 @@ Build Your Favorites: Personalize your experience by favoriting your go-to resta
 
 Convenient Cart System: Add and remove dishes from your cart with ease, allowing you to build your order exactly as you like before checkout.
 
-[text](Screenshots) ![text](Screenshots/1.jpeg) ![text](Screenshots/2.jpeg) ![text](Screenshots/3.jpeg) ![text](Screenshots/4.jpeg)
+(Screenshots) ![text](Screenshots/1.jpeg) ![text](Screenshots/2.jpeg) ![text](Screenshots/3.jpeg) ![text](Screenshots/4.jpeg)
 
 ![alt text](Screenshots/5.jpeg) ![alt text](Screenshots/6.jpeg) ![alt text](Screenshots/7.jpeg) ![alt text](Screenshots/8.jpeg) ![alt text](Screenshots/9.jpeg) ![alt text](Screenshots/cart.jpeg)
